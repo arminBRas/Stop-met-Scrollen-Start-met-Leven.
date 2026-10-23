@@ -1,0 +1,352 @@
+  @import url("https://use.typekit.net/zct7pqv.css");
+
+  @font-face {
+      font-family: 'Californian';
+      src: url(./Fonts/Californian\ FB\ Regular.ttf);
+  }
+
+  @font-face {
+      font-family: 'pixel';
+      src: url(./Fonts/hooge\ 0857\ Regular.ttf);
+  }
+
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      background-image: url(./Background/background.png);
+      background-size: cover;
+  }
+
+  .pagina1 header section {
+      position: relative;
+      /*Positions hier en in dit hele css document geleerd via https://www.youtube.com/watch?v=YEmdHbQBCSQ*/
+      width: 75%;
+      margin: auto;
+      margin-top: 20px;
+  }
+
+  header img {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  .pagina1 header h1 {
+      position: absolute;
+      top: 40%;
+      left: 4%;
+      color: rgb(255, 255, 255);
+      font-family: californian;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 5vw;
+      transform: scale(1, 3);
+      /* gebruik gemaakt van https://www.w3docs.com/snippets/css/how-to-stretch-a-text-with-css om de tekst te stretchen*/
+      line-height: 4vw;
+      text-shadow: #f9f6f6 1px 0 10px;
+      ;
+      /*text shadow: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-shadow*/
+  }
+
+
+  .pagina1 header h1::first-line {
+      font-size: 8vw;
+      font-family: pixel;
+      text-shadow: none;
+      ;
+  }
+
+  .pagina2 header h1 {
+      position: static;
+      color: rgb(255, 0, 0);
+      font-family: californian;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 9vw;
+      /* gebruik gemaakt van https://www.w3docs.com/snippets/css/how-to-stretch-a-text-with-css om de tekst te stretchen*/
+      margin: 4vw;
+      margin-left: 10%;
+      margin-right: 10%;
+      text-shadow: #0c0c0c 1px 0 10px;
+      ;
+  }
+
+  .pagina2 header h1::first-line {
+      color: black;
+      font-size: 8vw;
+      text-shadow: none
+  }
+
+  .pagina3 header h1 {
+      position: static;
+      color: black;
+      font-family: californian;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 9vw;
+      /* gebruik gemaakt van https://www.w3docs.com/snippets/css/how-to-stretch-a-text-with-css om de tekst te stretchen*/
+      margin: 4vw;
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+
+  header ul {
+      position: absolute;
+      display: flex;
+      list-style: none;
+      top: 3%;
+      left: 49%;
+  }
+
+  nav ul li {
+      margin: 0.5vw;
+      position: relative;
+  }
+
+  nav a {
+      padding: 0.5vw;
+      color: black;
+      background: linear-gradient(to top right, rgba(164, 177, 172, 0.597), white);
+      border-radius: 50px;
+      font-size: 1vw;
+      text-decoration: none;
+      transition: all 300ms ease-in-out;
+      font-family: "inter-18pt", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      display: inline-block
+  }
+
+  .pagina1 nav ul li:first-of-type a,
+  .pagina2 nav ul li:nth-of-type(2) a,
+  .pagina3 nav ul li:last-of-type a {
+      background: rgb(239, 237, 237)
+  }
+
+  nav a:hover {
+      transform: scale(1.02)
+  }
+
+  nav a:active {
+      background-color: #e0e0e0;
+  }
+
+  header nav ul img {
+      position: absolute;
+      top: -45%;
+      right: -4%;
+      width: 2vw;
+      height: auto;
+      z-index: 10;
+      pointer-events: none;
+  }
+
+  header p:first-of-type {
+      margin-left: 15%;
+      margin-right: 12%;
+      margin-top: 2%;
+      margin-bottom: 3%;
+      font-size: 1vw;
+      font-family: californian;
+      font-weight: 300;
+      font-style: normal;
+      transform: scale(1, 3);
+  }
+
+  main section,
+  footer section {
+      align-items: center;
+      margin-left: 25%;
+      margin-right: 25%;
+      margin-bottom: 3%;
+      background: rgba(255, 255, 255, 0.751);
+      padding: 1vw;
+      border-radius: 1vw;
+
+  }
+
+  .pagina1 main section:nth-of-type(2) {
+      margin-right: 15%;
+      margin-left: 15%
+  }
+
+  .pagina1 main section:nth-of-type(3) {
+      margin-right: 25%;
+      margin-left: 20%;
+      margin-bottom: 70%;
+  }
+
+  .pagina1 main section:nth-of-type(even),
+  .pagina2 main section:nth-of-type(3) {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 1%;
+  }
+
+  .pagina2 main section,
+  .pagina3 main section {
+      align-items: center;
+      margin-left: 12%;
+      margin-right: 25%;
+      margin-bottom: 3%;
+  }
+
+  .pagina2 main section:nth-of-type(2) {
+      margin-left: 20%;
+      margin-right: 15%;
+  }
+
+  .pagina2 main section:nth-of-type(3) {
+      flex-direction: row-reverse;
+      margin-right: 15%;
+  }
+
+  .pagina1 figure img {
+      width: 13vw;
+      border-radius: 10px;
+      margin: 1vw;
+  }
+
+  .pagina2 figure img {
+      width: 15vw;
+      border-radius: 10px;
+  }
+
+  main h2 {
+      font-family: "ff-typestar-black-web", sans-serif;
+      font-weight: 600;
+      font-style: italic;
+      font-size: 3vw;
+      margin-bottom: 0.5em;
+  }
+
+  .pagina3 h2 {
+    font-size: 1.7vw;
+  }
+
+  main p {
+      font-family: "ff-typestar-black-web", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.4vw;
+      line-height: 2.3vw;
+  }
+
+  .pagina1 aside:first-of-type p {
+      margin-left: 5%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      position: absolute;
+      top: 70vw;
+      transform: scale(1, 5);
+      font-size: 4vw;
+  }
+
+  .pagina1 aside:last-of-type p {
+      margin-left: 80%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      position: absolute;
+      top: 135vw;
+      transform: scale(1, 5);
+      font-size: 4vw;
+  }
+
+  .pagina2 main aside p {
+      margin-left: 79%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      position: absolute;
+      top: 20vw;
+      transform: scale(1.4, 5);
+      font-size: 5vw;
+  }
+
+
+  .pagina2 main a {
+      font-size: 3vw;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(255, 0, 0);
+      padding: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      color: white;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: all 300ms ease;
+      margin-left: 82%;
+      margin-top: -19%;
+      position: absolute
+  }
+
+  .pagina2 main a:last-of-type {
+      margin-left: 8%;
+      margin-top: -48%;
+  }
+
+  .pagina2 main section:hover:last-of-type~a,
+  .pagina2 main a:hover {
+      /*https://stackoverflow.com/questions/8614423/how-to-change-one-element-while-hovering-over-another-with-css*/
+      background-color: rgb(255, 0, 0);
+      transform: scale(1.4);
+  }
+
+  main a {
+      color: inherit;
+      text-decoration: none;
+  }
+
+  main li {
+      font-size: 1.3vw;
+      line-height: 1.6;
+      margin-bottom: 1.5vw;
+      margin-top: 1.2vw;
+      margin-left: 1.3vw;
+      font-family: "ff-typestar-black-web", sans-serif;
+      font-weight: 600;
+      font-style: italic;
+      padding: 0.2em;
+  }
+
+  main ul li a {
+      transition: all 100ms;
+  }
+
+  main ul li a:link {
+      color: #007BFF;
+  }
+
+  main ul li a:visited {
+      color: #00366f;
+  }
+
+  main ul li a:hover {
+      color: #00366f;
+  }
+
+  figcaption {
+      text-align: center;
+      font-family: "noto-serif", serif;
+      font-weight: 300;
+      font-style: normal;
+      margin-bottom: 20px;
+      font-size: 1vw;
+  }
+
+
+  footer h2 {
+      font-family: "ff-typestar-black-web", sans-serif;
+      font-weight: 600;
+      font-style: italic;
+      font-size: 3vw;
+      padding-bottom: 1vw;
+  }
+
+  footer p {
+      font-family: "ff-typestar-black-web", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.4vw;
+      line-height: 2.3vw;
+  }
